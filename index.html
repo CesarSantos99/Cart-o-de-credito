@@ -4,28 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <title>Comprar</title>
 </head>
 
 <body>
 
-    <div>
-        <img src="" alt="tenis">
-        <p>Nike</p>
-        <p>R$350,00</p>
-    </div>
+    <div class="container__principal">
 
-
-    <div>
         <div>
-            <label>Numero do cartão</label>
-            <input type="text">
-            <hr>
+            <img class="img__principal" src="https://i.pinimg.com/564x/0c/f2/54/0cf2542221d31f468ecf58943c527fff.jpg"
+                alt="tenis">
+            <p class="text__img">Nike <span>R$350,00</span></p>
         </div>
 
+
         <div>
-            <label for="validade-cartao">Data de vencimento (MM/AA)</label>
-            <select placeholder="MM/AA" required>
+            <div>
+                <label>Numero do cartão</label>
+                <input type="text">
+                <hr>
+            </div>
+
+            <div>
+                <label for="validade-cartao">Data de vencimento (MM/AA)</label>
+                <input type="custon" placeholder="MM/AA" required>
+                <option value=""> mask:'99/99'</option>
                 <hr>
 
 
@@ -35,10 +42,11 @@
                     <hr>
                 </div>
 
-        </div>
+            </div>
 
-        <div>
-            <button>Pague agora</button>
+            <div>
+                <button>Pague agora</button>
+            </div>
         </div>
 </body>
 
