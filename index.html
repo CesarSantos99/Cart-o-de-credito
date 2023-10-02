@@ -15,7 +15,7 @@
 
     <div class="container__principal">
 
-        <div>
+        <div class="container__img">
             <img class="img__principal" src="https://i.pinimg.com/564x/0c/f2/54/0cf2542221d31f468ecf58943c527fff.jpg"
                 alt="tenis">
             <p class="text__img">Nike <span>R$350,00</span></p>
@@ -23,31 +23,30 @@
 
 
         <div>
-            <div>
-                <label>Numero do cartão</label>
-                <input type="text">
+            <div class="info">
+                <p>Numero do cartão</p>
+                <input placeholder="Ex: Maria" type="text">
                 <hr>
             </div>
 
-            <div>
-                <label for="validade-cartao">Data de vencimento (MM/AA)</label>
-                <input type="custon" placeholder="MM/AA" required>
-                <option value=""> mask:'99/99'</option>
+            <div class="info">
+                <p>Data de vencimento (MM/AA)</p>
+                <input type="date" placeholder="MM/AA" required>
                 <hr>
-
-
-                <div>
-                    <p>Código de segurança (CVC)</p>
-                    <input type="number">
-                    <hr>
-                </div>
-
             </div>
 
-            <div>
+
+            <div class="info">
+                <p>Código de segurança (CVC)</p>
+                <input type="password" placeholder="***" required>
+                <hr>
+            </div>
+
+            <div class="button">
                 <button>Pague agora</button>
             </div>
         </div>
+    </div>
 </body>
 
 </html>
